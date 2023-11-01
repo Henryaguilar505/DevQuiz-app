@@ -23,7 +23,7 @@ class QuizWelcome extends Component
 
         if($sala === null){
             session()->flash('mensaje', 'El pin es inválido');
-           return redirect()->route('dashboard');
+           return redirect()->route('index');
         }
         
         return redirect()->route('game', [$sala->pin, 'nombre' => $datos['nombre']]);

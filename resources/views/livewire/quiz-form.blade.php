@@ -8,7 +8,7 @@
                         placeholder="Nombre de la sala">
 
                     <button type="button"
-                        class="font-bold bg-indigo-700 hover:bg-indigo-800 p-2 text-gray-100 rounded-md"
+                        class="font-bold bg-indigo-700 hover:bg-indigo-800 p-2 mt-2 md:mt-0 text-gray-100 rounded-md"
                         wire:click="addName">
                         Guardar Nombre</button>
                 </div>

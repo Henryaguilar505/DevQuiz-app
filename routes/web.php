@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/mis-quiz', [QuizController::class, 'index'])->middleware('auth')->name('quiz');
+Route::get('/dashboard', [QuizController::class, 'index'])->middleware('auth')->name('quiz');
 Route::get('/sala/finalizar/{sala}/{resumen}', [QuizController::class, 'finalizar'])->name('quiz-finalizar');
 Route::get('sala/resumen/{sala}', [QuizController::class, 'verResumen'])->middleware('auth')->name('show.resumen');
 // Route::get('sala/{sala}/editar', [QuizController::class, 'editar'])->middleware('auth')->name('sala.editar');
@@ -26,9 +26,9 @@ Route::get('/crear', function () {
     return view('quiz.crearQuiz');
 })->middleware('auth')->name('crear-quiz');
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
-})->name('dashboard');
+})->name('index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -31,7 +31,7 @@ class QuizController extends Controller
         }
 
         session()->flash('mensaje', 'El pin es inválido');
-        return redirect()->route('dashboard'); 
+        return redirect()->route('index'); 
     }
 
     public function finalizar(Sala $sala, Resumen $resumen)

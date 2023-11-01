@@ -16,7 +16,7 @@
                  class="font-black text-slate-900 dark:text-slate-400 text-3xl">Calificación: 
                  <span class="text-slate-700 dark:text-slate-100">{{$calificacion}}/{{$totalPreguntas}}</span></p>
 
-                 <a href="{{route('dashboard')}}"
+                 <a href="{{route('index')}}"
                  class="bg-indigo-700 font-semibold hover:bg-indigo-800 dark:bg-gray-200 border dark:hover:bg-gray-100 dark:text-slate-900 text-white py-2 px-4 rounded-md"
                  >Volver</a>
                    
